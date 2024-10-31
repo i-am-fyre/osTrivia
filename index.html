@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Display</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
+</head>
+<body>
+    <div>
+        <div class="cast-container">
+            <button id="cast-button">📺 Cast</button>
+        </div>
+        <div class="logo-container">
+            <img src="img/logo.webp" alt="Company Logo" id="company-logo" />
+        </div>
+        <div class="trivia-container">
+            <svg class="timer-circle" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="50" />
+                <text id="timer-text" x="60" y="70" text-anchor="middle" font-size="24" fill="#ff4444">10</text>
+            </svg>
+            <h2 id="question">Loading question...</h2>
+            <div id="options" class="options"></div>
+        </div>
+    </div>
+    <div id="question-id" class="faded-text">ID: 1</div>
+    <script src="app.js"></script>
+</body>
+</html>

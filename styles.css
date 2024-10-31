@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    position: relative;
+  }
+
+  .logo-container {
+    text-align: center;  /* Center the logo */
+    margin-bottom: 20px; /* Space between logo and question */
+    position: fixed;
+    top: 20px;
+  }
+  
+  #company-logo {
+    max-width: 200px;  /* Adjust as needed */
+    height: auto;      /* Maintain aspect ratio */
+  }
+
+  .cast-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  #cast-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .trivia-container {
+    text-align: center;
+    width: 70vw;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .timer-circle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .timer-circle circle {
+    fill: none;
+    stroke: #ff4444;
+    stroke-width: 10;
+    stroke-dasharray: 314;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 1s linear;
+    transform: rotate(-90deg);  /* Apply rotation only to the circle */
+    transform-origin: 50% 50%;  /* Rotate around the center */
+  }
+  
+  .pulse {
+    animation: pulse 750ms ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+  
+  #timer-text {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  
+  h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .option {
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    color: #333;
+    font-size: 1.5em;
+    transition: background-color 0.2s;
+  }
+  
+  .option:hover {
+    background-color: #bdbdbd;
+  }
+  
+  .correct {
+    background-color: #4caf50;
+    color: #fff;
+  }
+
+  #question-id {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.2); /* Faded color */
+    font-family: Arial, sans-serif;
+  }
+  
